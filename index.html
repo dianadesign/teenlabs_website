@@ -1,408 +1,494 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-	<meta charset="utf-8">
 	<title>TeenLabs</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
+	<!-- META TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
 	<meta name="author" content="">
+	<meta name="description" content="">
 
-	<link rel="shortcut icon" href="images/logo1.png">
-
-	<!-- CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
-	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-
-	<!-- FONTS -->
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-	<!-- SCRIPTS -->
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
-
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
-	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
-	<script src="js/superfish.min.js" type="text/javascript"></script>
-	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-	<script src="js/owl.carousel.js" type="text/javascript"></script>
-	<script src="js/animate.js" type="text/javascript"></script>
-	<script src="js/jquery.BlackAndWhite.js"></script>
-	<script src="js/myscript.js" type="text/javascript"></script>
-	<script>
-
-		//PrettyPhoto
-		jQuery(document).ready(function() {
-			$("a[rel^='prettyPhoto']").prettyPhoto();
-		});
-
-		//BlackAndWhite
-		$(window).load(function(){
-			$('.client_img').BlackAndWhite({
-				hoverEffect : true, // default true
-				// set the path to BnWWorker.js for a superfast implementation
-				webworkerPath : false,
-				// for the images with a fluid width and height
-				responsive:true,
-				// to invert the hover effect
-				invertHoverEffect: false,
-				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
-				intensity:1,
-				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
-					fadeIn: 300, // 200ms for fadeIn animations
-					fadeOut: 300 // 800ms for fadeOut animations
-				},
-				onImageReady:function(img) {
-					// this callback gets executed anytime an image is converted
-				}
-			});
-		});
-
-	</script>
-
+	<!-- STYLES -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/ionicons.min.css">
+	<link rel="stylesheet" href="assets/css/flexslider.css">
+	<link rel="stylesheet" href="assets/css/animsition.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="animsition">
+	<!-- HEADER  -->
+	<header class="main-header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+					<img src="assets/img/logo.png" alt="logo">
+				</a>
+			</div>
 
-<!-- PRELOADER -->
-<img id="preloader" src="images/preloader.gif" alt="" />
-<!-- //PRELOADER -->
-<div class="preloader_hide">
-
-	<!-- PAGE -->
-	<div id="page">
-
-		<!-- HEADER -->
-		<header>
-
-			<!-- MENU BLOCK -->
-			<div class="menu_block">
-
-				<!-- CONTAINER -->
-				<div class="container clearfix">
-
-					<!-- LOGO -->
-					<div class="logo pull-left">
-						<a href="index.html" > <img src="images/logo.png"></img></a>
-					</div><!-- //LOGO -->
-					<!-- MENU -->
-					<div class="pull-right">
-						<nav class="navmenu center">
-							<button>test diana</button>
-							<ul>
-								<li class="first active scroll_btn"><a href="index.html" style="color:#cc853e">Home</a></li>
-								<li class="sub-menu">
-									<a href="javascript:void(0);" style="color:#cc853e">Labs</a>
-									<ul>
-										<li><a href="eLabs1.html">eLabs nivelul 1</a></li>
-										<li><a href="eLabs2.html" >eLabs nivelul 2</a></li>
-										<li><a href="open_eLabs.html">open eLabs</a></li>
-									</ul>
-								</li>
-								<li class="scroll_btn"><a href="#about" style="color:#cc853e">De ce sa vii</a></li>
-								<li class="scroll_btn"><a href="team_page.html" style="color:#cc853e">Despre noi</a></li>
-								<li class="scroll_btn"><a href="contact_page.html" style="color:#cc853e">Contact</a></li>
-								<li><a href="formular.html" style="color:#cc853e">Ma inscriu</a></li>
+			<div class="menu">
+				<!-- desktop navbar -->
+				<nav class="desktop-nav">
+					<ul class="first-level">
+						<li><a href="index.html" class="animsition-link">Acasa</a></li>
+						<li><a href="#dece" class="animsition-link">De ce sa vii?</a></li>
+						<li><a href="#labs-list">Labs</a>
+							<ul class="second-level">
+								<li><a href="elabs-v1.html" class="animsition-link">ELABS v1</a></li>
+								<li><a href="elabs-v2.html" class="animsition-link">ELABS v2</a></li>
+								<li><a href="open-elabs.html" class="animsition-link">OPEN ELABS</a></li>
 							</ul>
-						</nav>
-					</div><!-- //MENU -->
-				</div><!-- //MENU BLOCK -->
-			</div><!-- //CONTAINER -->
-		</header><!-- //HEADER -->
-
-
-		<!-- HOME -->
-		<section id="home" class="padbot0">
-
-			<!-- TOP SLIDER -->
-			<div class="flexslider top_slider">
-				<ul class="slides">
-					<li class="slide1">
-					<div class="flex_caption1">
-							<p class="title1 captionDelay2 FromTop" style="color:#000">Experiență pe bune!</p>
-							<p class="title4 captionDelay7 FromBottom" style="color:#000">Am dat startul înscrierilor în Teen Labs. Intră în cea mai faină comunitate de liceeni și experimentează antreprenoriatul!</p>
-						</div>
-					<li class="slide2">
-					<div class="flex_caption1">
-							<p class="title1 captionDelay2 FromTop" style="color:#000">Afli. Aplici. Înveți practic.</p>
-						</div>
-					<li class="slide3">
-						<div class="flex_caption1">
-							<iframe align="top" width="40%" height="480px"
-	src="http://www.youtube.com/embed/ELE3xihlwj8" >
-	</iframe>
-						</div>
-
-						<!-- VIDEO BACKGROUND -->
-						<a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
-						<!-- //VIDEO BACKGROUND -->
-					</li>
-				</ul>
+						</li>
+						<li><a href="despre-noi.html" class="animsition-link">Despre noi</a></li>
+						<li><a href="contact.html" class="animsition-link">Contact</a></li>
+						<li>
+							<a href="#" class="btn btn-nav btn-orange">MA INSCRIU</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- mobile navbar -->
+				<nav class="mobile-nav"></nav>
+				<div class="menu-icon">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
 			</div>
-			<div id="carousel">
-				<ul class="slides">
-					<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
-					<li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
-					<li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
-				</ul>
-			</div><!-- //TOP SLIDER -->
-		</section><!-- //HOME -->
+		</div>
+	</header>
 
+	<!-- HERO SECTION  -->
+	<div class="site-hero">
+		<div class="overlay"></div>
+		<ul class="slides">
+			<li>
+				<div class="big-title uppercase montserrat-text">Experiență pe bune!</div>
+				<p>Intră în cea mai faină comunitate de liceeni și experimentează antreprenoriatul!
+				Am dat startul înscrierilor în Teen Labs</p>
+			</li>
+			<li>
+				<div class="big-title uppercase montserrat-text">Afli. Aplici. Înveți practic.</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+			</li>
+		</ul>
+	</div>
 
-		<!-- ABOUT -->
-		<section id="about">
-
-			<!-- SERVICES -->
-			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-				<!-- CONTAINER -->
-				<div class="container">
-
-				</div><!-- //CONTAINER -->
-			</div><!-- //SERVICES -->
-			<!-- CLEAN CODE -->
-			<div class="cleancode_block">
-
-				<!-- CONTAINER -->
-				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-					<!-- CASTOM TAB -->
-					<div id="myTabContent" class="tab-content">
-					<p class="title"><b>Abilitati</b></p>
-					<p class="title">Dobândești abilități profesionale și de viață</p>
-						<div class="tab-pane fade in active clearfix" id="tab1">
-							<p class="title"><b>Dezvoltare personala</b></p>
-							<span>In TeenLabs iti dezvolti 3 mari calitati: Leadership, tenacitate si comunicare</span>
-						</div>
-						<div class="tab-pane fade clearfix" id="tab2">
-							<p class="title"><b>Teamwork</b></p>
-							<span>Pentru a fii eficient in realizarea afacerii tale, cu ajutorul sesiunilor de feedback vei invata sa lucrezi si sa te coordonezi cu membrii echipei tale.</span>
-						</div>
-						<div class="tab-pane fade clearfix" id="tab3">
-							<p class="title"><b>Entrepreneurship</b></p>
-							<span>Lucrand la afacerea ta si la propria ta dezvoltare personala, vei invata cum sa aplici gandirea antreprenoriala in viata de zi cu zi.</span>
-						</div>
-						<div class="tab-pane fade clearfix" id="tab4">
-							<p class="title"><b>Friendly environment</b></p>
-							<span>Atmosfera din TeenLabs este foarte relaxanta, relatia intre participanti si traineri este una de prietenie.</span>
-						</div>
+	<!-- HISTORY OF AGENCY -->
+	<div class="container">
+		<div class="teenlabs">
+			<div class="col-md-5 col-sm-12">
+				<div class="row bordered">
+					<img src="assets/img/teenlabs.jpg" alt="image">
+				</div>
+			</div>
+			<div class="col-md-offset-1 col-md-6 col-sm-12">
+				<div class="row">
+					<div class="section-title">
+						<span class="text-white">history of teenlabs</span>
 					</div>
-					<ul id="myTab" class="nav nav-tabs">
-						<li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span>Dezvoltare personala</span></a></li>
-						<li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span>Teamwork</span></a></li>
-						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>Entrepreneurship</span></a></li>
-						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span>Friendly environment</span></a></li>
-					</ul><!-- CASTOM TAB -->
-				</div><!-- //CONTAINER -->
-			</div><!-- //CLEAN CODE -->
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
+						consequat. in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</p>
+					<a href="#" class="btn btn-orange" style="float:right;margin-top:30px">MA INSCRIU</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-		<!-- PROJECTS -->
-		<section id="projects" class="padbot20">
+	<!-- WHY CHOOSE US -->
+	<section class="services">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<span>De ce sa vii ?</span>
+					<p>Dobândești abilități profesionale și de viață</p>
+				</div>
+			</div>
 
-			<!-- CONTAINER -->
-			<div class="container">
-				<h2><b>Ateliere</b></h2>
-			</div><!-- //CONTAINER -->
+			<div class="col-md-12 col-sm-12 services-left wow fadeInUp">
+				<div class="row" style="margin-bottom:50px">
+
+					<div class="col-md-3 col-sm-12 text-center">
+							<img src="assets/img/brainstorm.svg" class="img-responsive w-40 m-0-a m-b-2" />
+							<span class="montserrat-text uppercase service-title">Leadership</span>
+					</div>
+
+					<div class="col-md-3 col-sm-12 text-center">
+							<img src="assets/img/teamwork.svg" class="img-responsive w-40 m-0-a m-b-2" />
+							<span class="montserrat-text uppercase service-title">lucru în echipă</span>
+					</div>
+
+					<div class="col-md-3 col-sm-12 text-center">
+							<img src="assets/img/growth.svg" class="img-responsive w-40 m-0-a m-b-2" />
+							<span class="montserrat-text uppercase service-title">Comunicare</span>
+					</div>
+
+					<div class="col-md-3 col-sm-12 text-center">
+							<img src="assets/img/confetti.svg" class="img-responsive w-40 m-0-a m-b-2" />
+							<span class="montserrat-text uppercase service-title">tenacitate</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
 
 
-			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
-				<!-- PROJECTS SLIDER -->
-					<div class="owl-demo owl-carousel team_slider">
-
-					<!-- work1 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="images/works/1.jpg" alt="" />
-								<a class="zoom" href="images/works/1.jpg" rel="prettyPhoto[portfolio1]" ></a>
-
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="eLabs1.html" >eLabs nivelul 1</a>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work1 -->
-
-					<!-- work2 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="images/works/2.jpg" alt="" />
-								<a class="zoom" href="images/works/2.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="eLabs2.html" >eLabs nivelul 2</a>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work2 -->
-
-					<!-- work3 -->
-					<div class="item">
-						<div class="work_item">
-							<div class="work_img">
-								<img src="images/works/3.jpg" alt="" />
-								<a class="zoom" href="images/works/3.jpg" rel="prettyPhoto[portfolio1]" ></a>
-							</div>
-							<div class="work_description">
-								<div class="work_descr_cont">
-									<a href="open_eLabs.html" >open eLabs</a>
-								</div>
-							</div>
-						</div>
-					</div><!-- //work3 -->
-				</div><!-- //PROJECTS SLIDER -->
+	<!-- LABS -->
+	<section class="labs">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<span>LABS</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
 			</div>
 
 
-			<!-- OUR CLIENTS -->
-			<!-- //OUR CLIENTS -->
-		</section><!-- //PROJECTS -->
-		<div class="our_clients">
-		<h1 style="text-align:center">Pentru ca ne sustin:</h1>
-				<!-- CONTAINER -->
-				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+			<!-- categories  -->
+			<div class="col-md-3">
+				<div class="row categories-grid wow fadeInLeft">
+					<span class="montserrat-text uppercase">choose category</span>
 
-					<!-- ROW -->
-					<div class="row">
-						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="images/clients/1.jpg" alt="" />
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="images/clients/2.png" alt="" />
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="images/clients/3.png" alt="" />
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-2 client_img">
-							<img src="images/clients/4.jpg" alt="" />
-							</div>
-						</div>
-					</div><!-- //ROW -->
-				</div><!-- CONTAINER -->
+					<nav class="categories">
+						<ul class="labs_filter">
+							<li><a href="" class="active" data-filter="*">all</a></li>
+							<li><a href="" data-filter=".photography">photography</a></li>
+							<li><a href="" data-filter=".web">webdesign</a></li>
+							<li><a href="" data-filter=".logo">logo</a></li>
+							<li><a href="" data-filter=".graphics">graphics</a></li>
+							<li><a href="" data-filter=".ads">advertising</a></li>
+							<li><a href="" data-filter=".fashion">fashion</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 
+			<!-- all works -->
+			<div class="col-md-9">
+				<div class="row labs_container">
+					<!-- single work -->
+					<div class="col-md-4 photography">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp">
+							<img src="assets/img/work-1.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>Brave man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
 
+					<!-- single work -->
+					<div class="col-md-4 fashion logo">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp" data-wow-delay=".2s">
+							<img src="assets/img/work-2.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>super man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
 
+					<!-- single work -->
+					<div class="col-md-4 ads graphics">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp" data-wow-delay=".3s">
+							<img src="assets/img/work-3.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>bat man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
 
+					<!-- single work -->
+					<div class="col-md-4 fashion ads">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp" data-wow-delay=".4s">
+							<img src="assets/img/work-1.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>spider man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
 
-		<!-- NEWS -->
-		<section id="news">
+					<!-- single work -->
+					<div class="col-md-4 graphics ads">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp" data-wow-delay=".5s">
+							<img src="assets/img/work-3.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>iron man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
 
-			<!-- CONTAINER -->
-			<div class="container">
-				<h2><b>Fostii participanti spun:...</b></h2>
+					<!-- single work -->
+					<div class="col-md-4 logo web photography">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp" data-wow-delay=".6s">
+							<img src="assets/img/work-2.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>iron man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
 
-				<!-- TESTIMONIALS -->
-				<div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
+					<!-- single work -->
+					<div class="col-md-4 ads graphics">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp" data-wow-delay=".7s">
+							<img src="assets/img/work-2.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>iron man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
 
-					<!-- TESTIMONIALS SLIDER -->
-					<div class="owl-demo owl-carousel testim_slider">
+					<!-- single work -->
+					<div class="col-md-4 web fashion photography">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp" data-wow-delay=".8s">
+							<img src="assets/img/work-3.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>iron man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
 
-						<!-- TESTIMONIAL1 -->
-						<div class="item">
-							<div class="testim_content">“Înveți lucruri folositoare pe care le pui in practică, oamenii sunt deschiși și implicați, iar informațiile sunt foarte bine selectate.”</div>
-							<div class="testim_author">—  Andreea Doda, <b>eLabs nivelul 1</b></div>
-						</div><!-- TESTIMONIAL1 -->
+					<!-- single work -->
+					<div class="col-md-4 fashion logo">
+						<a href="single-project.html" class="labs_item work-grid wow fadeInUp" data-wow-delay=".9s">
+							<img src="assets/img/work-1.jpg" alt="image">
+							<div class="labs_item_hover">
+								<div class="item_info">
+									<span>iron man</span>
+									<em>photography</em>
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- end single work -->
+				</div>
+				<!-- end row -->
+			</div>
+			<!-- all works end -->
+		</div>
+		<!-- end container -->
+	</section>
+	<!-- labs -->
 
-						<!-- TESTIMONIAL2 -->
-						<div class="item">
-							<div class="testim_content">“Proiectul m-a ajutat să îmi descopăr noi calități, să le identific pe cele pe care le aveam la început și să lucrez la altele. Pe scurt, acest proiect m-a ajutat să mă dezvolt personal mult, să am mai multe încredere în mine pe viitor și să fiu mai organizată.”</div>
-							<div class="testim_author">—  Raluca Grosu, <b>Ambasador</b></div>
-						</div><!-- TESTIMONIAL2 -->
+	<!-- partners -->
+	<section class="partners">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<span>Parteneri</span>
+					<p>Pentru ca ne sustin</p>
+				</div>
+			</div>
 
-						<!-- TESTIMONIAL3 -->
-						<div class="item">
-							<div class="testim_content">“Organizatorii proiectului au fost implicați, iar programul atelierelor a fost bine structurat și interesant. M-am bucurat să particip la acest proiect și consider că a fost util și distractiv.”</div>
-							<div class="testim_author">—  Lucia Pălăgeșiu, <b>eLabs nivelul 1</b></div>
-						</div><!-- TESTIMONIAL3 -->
-					</div><!-- TESTIMONIALS SLIDER -->
-				</div><!-- //TESTIMONIALS -->
-			</div><!-- //CONTAINER -->
-		</section><!-- //NEWS -->
-	</div><!-- //PAGE -->
+			<div class="col-md-12 col-sm-12 services-left wow fadeInUp">
+				<div class="row" style="margin-bottom:50px">
 
-	<!-- CONTACTS -->
-	<section id="contacts">
-	</section><!-- //CONTACTS -->
+					<div class="col-md-4 col-sm-12 text-center">
+							<img src="assets/img/mindshub-logo-gray.png" class="img-responsive w-40 m-0-a" />
+					</div>
+
+					<div class="col-md-4 col-sm-12 text-center">
+							<img src="assets/img/startupsurvivor-logo-gray.png" class="img-responsive w-40 m-0-a" />
+					</div>
+
+					<div class="col-md-4 col-sm-12 text-center">
+							<img src="assets/img/coworktimisoara-logo-gray.png" class="img-responsive w-40 m-0-a" />
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- testimonials -->
+	<section class="testim">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<span>Testimoniale</span>
+					<p>Și pentru că foștii participanți zic că…</p>
+				</div>
+			</div>
+
+			<div class="col-md-12 col-sm-12 services-left wow fadeInUp">
+				<div class="flexslider home-slider">
+		      <ul class="slides">
+		        <li>
+		          slide 1
+		        </li>
+		        <li>
+		          slide 2
+		        </li>
+		        <li>
+		          slide 3
+		        </li>
+		      </ul>
+    		</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- newsletter -->
+	<section class="orange-section wow fadeInUp" style="padding:50px 0">
+		<div class="container">
+			<div class="col-md-6 col-sm-12">
+				<div class="row">
+					<span class="white-text montserrat-text uppercase" style="font-size:30px;display:block;">
+						you think we're cool? let's work together
+					</span>
+					<a href="#" class="btn white" style="margin-top:30px"><span>get in touch</span></a>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="row">
+					<div class="white-section" style="padding:20px">
+						<span class="montserrat-text uppercase" style="font-size:24px">stay informed with our newsletter</span>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<form action="#" method="post">
+							<div class="input_1">
+								<input type="text" name="email">
+								<span>your email</span>
+							</div>
+							<button type="submit" class="btn btn-orange" style="margin-top:20px"><span>send</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<!-- FOOTER -->
-	<footer>
-
-		<!-- CONTAINER -->
+	<footer class="main-footer wow fadeInUp">
 		<div class="container">
-
-			<!-- ROW -->
-
-			<div class="row" data-appear-top-offset="-100" data-animated="fadeInUp">
-				<!--<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
-					<h4><b>Date de contact</b></h4>
-					<p>telefon:-</p>
-					<p>mail:contact@teenlabs.ro</p>
-					<p>adresa:-</p>
+			<div class="col-md-8 col-sm-12">
+				<div class="row">
+					<nav class="footer-nav">
+						<ul>
+							<li><a href="index.html" class="animsition-link link">Home</a></li>
+							<li><a href="about.html" class="animsition-link link">about us</a></li>
+							<li><a href="services.html" class="animsition-link link">services</a></li>
+							<li><a href="labs-1.html" class="animsition-link link">labs</a></li>
+							<li><a href="blog-1.html" class="animsition-link link">blog</a></li>
+							<li><a href="contact.html" class="animsition-link link">contact us</a></li>
+						</ul>
+					</nav>
 				</div>
-				-->
+			</div>
 
-				<div class="respond_clear"></div>
-
-
-			<!--	<div class="col-lg-4 col-md-4 padbot30">
-					<h4><b>Contactează-ne</b></h4>
-
-					<!-- CONTACT FORM -->
-				<!--	<div class="span9 contact_form">
-						<div id="note"></div>
-						<div id="fields">
-							<form id="contact-form-face" class="clearfix" action="mailto:contact@teenlabs.ro">
-								<input type="text" name="name" value="Nume" onFocus="if (this.value == 'Nume') this.value = '';" onBlur="if (this.value == '') this.value = 'Nume';" />
-								<input type="text" name="mail" value="E-mail" onFocus="if (this.value == 'E-mail') this.value = '';" onBlur="if (this.value == '') this.value = 'E-mail';" />
-								<textarea name="message" onFocus="if (this.value == 'Mesaj') this.value = '';" onBlur="if (this.value == '') this.value = 'Mesaj';">Mesaj</textarea>
-								<input class="contact_btn" type="submit" value="Trimite mesaj" />
-							</form>
-						</div>
-					</div><!-- //CONTACT FORM -->
-				</div>
-				<div class="col-lg-4 col-md-4 padbot30">
-					<h4><b>Prinde noutatile</b></h4>
-
-					<!-- CONTACT FORM -->
-					<div class="container">
-							<form action="newsletter.php" method="POST">
-								<input placeholder="E-mail" type="email" tabindex="1" name="mail" required >
-								<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-							</form>
-						</div>
-					</div><!-- //CONTACT FORM -->
-				<ul class="social">
-			<li><a href="https://www.facebook.com/teenlabsromania/?ref=br_rs" target="_blank" style="color:#cc853e"><i class="fa fa-facebook-square"></i></a></li>
-			<li><a href="https://www.youtube.com/channel/UC3yciktLNkha4hHyT39JR_Q?" target="_blank" style="color:#cc853e"><i class="fa fa-youtube"></i></a></li>
-			<li><a href="https://plus.google.com/u/2/104851082415352392040" target="_blank" style="color:#cc853e"><i class="fa fa-google-plus"></i></a></li>
-			<li><a href="https://www.google.ro/maps/place/Minds+Hub/@45.7538386,21.2424181,17z/data=!3m1!4b1!4m5!3m4!1s0x47456762e4e4805b:0x92a4a277d72aab2!8m2!3d45.7538349!4d21.2446067" target="_blank"style="color:#cc853e"> <i class="map_show fa fa-map-marker"></i></a></li>
-			<li><a href="faq.html" target="_blank" style="color:#cc853e"><b>F.A.Q.</b></a></li>
+			<div class="col-md-4 col-sm-12" style="text-align:right">
+				<div class="row">
+					<div class="uppercase gray-text">
+						created by akhouad &copy;2016. all rights reserved.
+					</div>
+					<ul class="social-icons" style="margin-top:30px;float:right">
+						<li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+						<li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+						<li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
+						<li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
+						<li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
+						<li><a href="#"><i class="icon ion-social-instagram"></i></a></li>
 					</ul>
-			</div><!-- //ROW -->
-			<div class="row copyright">
-				<div class="col-lg-12 text-center">
-
-				 <p>Copyright © Mind Fosters Training & Consulting</p>
-				 <p>loading icon by loading.io</p>
 				</div>
+			</div>
+		</div>
+	</footer>
 
-			</div><!-- //ROW -->
-		</div><!-- //CONTAINER -->
-	</footer><!-- //FOOTER -->
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="assets/js/smoothScroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		$(window).load(function() {
+			new WOW().init();
+
+			// initialise flexslider
+			$('.site-hero').flexslider({
+				animation: "fade",
+				directionNav: false,
+				controlNav: false,
+				keyboardNav: true,
+				slideToStart: 0,
+				animationLoop: true,
+				pauseOnHover: false,
+				slideshowSpeed: 4000,
+			});
 
 
-</div>
+			// initialize isotope
+			var $container = $('.labs_container');
+			$container.isotope({
+				filter: '*',
+			});
+
+			$('.labs_filter a').click(function(){
+				$('.labs_filter .active').removeClass('active');
+				$(this).addClass('active');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+					filter: selector,
+					animationOptions: {
+						duration: 500,
+						animationEngine : "jquery"
+					}
+				});
+				return false;
+			});
+		});
+	</script>
 </body>
 </html>
