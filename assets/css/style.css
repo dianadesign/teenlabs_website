@@ -156,6 +156,15 @@ ul.social-icons li a:hover{
 .m-b-2 {
 	margin-bottom: 20px;
 }
+.m-l-2 {
+	margin-left: 20px;
+}
+.m-r-2 {
+	margin-right: 20px;
+}
+
+
+
 @media (max-width: 991px) {
 	.section-title{
 		margin : 0 auto 50px;
@@ -737,6 +746,15 @@ footer.main-footer nav.footer-nav ul li a{
 .flexslider.home-slider ul.flex-direction-nav {
 	display: none;
 }
+/*.flexslider .quotes::before {
+	font-size: 50px;
+	color: #cc853e;
+	content: '“';
+}*/
+
+
+
+
 
 /*single project*/
 .project_images{float:left;}
