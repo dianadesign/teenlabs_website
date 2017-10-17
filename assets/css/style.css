@@ -443,7 +443,7 @@ nav.desktop-nav ul.first-level > li > ul.second-level{
 	top: 70px;
 	left: 0;
 	min-width: 200px;
-	background-color: #333333;
+	background-color: #cc853e;
 }
 nav.desktop-nav ul.first-level > li:last-child > ul.second-level{
 	left: auto;
@@ -458,7 +458,7 @@ nav.desktop-nav ul.first-level > li > ul.second-level > li > a{
 	color:#fff;
 }
 nav.desktop-nav ul.first-level > li > ul.second-level > li:nth-child(even) > a{
-	background-color: #585866;
+	background-color: #cc853e;
 }
 nav.desktop-nav ul.first-level > li > ul.second-level > li > a:hover{
 	background-color: #404051;
