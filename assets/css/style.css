@@ -88,6 +88,9 @@ a.link:after{
 	-webkit-transition:all .2s ease-in-out;
 			transition:all .2s ease-in-out;
 }
+a.link-orange:hover {
+	color: #cc853e !important;
+}
 a:hover, a:focus{
 	color:#333333;
 	text-decoration: none;
@@ -117,11 +120,20 @@ ul.social-icons li a:hover{
 	margin: 0 auto 100px;
 	text-align: center;
 }
+.section-title.about-section {
+	text-align:left;
+	float:left;
+	width:100%;
+	margin-bottom:0;
+}
 .text-white {
 	color: #ffffff !important;
 }
 .text-orange {
 	color: #cc853e !important;
+}
+.text-dark-gray {
+	color: #333333 !important;
 }
 .section-title span{
 	position: relative;
@@ -153,11 +165,23 @@ ul.social-icons li a:hover{
 .w-40 {
 	width: 40%;
 }
+.w-100 {
+	width: 100%;
+}
+.m-a-0 {
+	margin: 0;
+}
 .m-0-a {
 	margin: 0 auto;
 }
+.m-b-1 {
+	margin-bottom: 10px;
+}
 .m-b-2 {
 	margin-bottom: 20px;
+}
+.m-t-3 {
+	margin-top: 30px;
 }
 .m-l-2 {
 	margin-left: 20px;
@@ -165,8 +189,17 @@ ul.social-icons li a:hover{
 .m-r-2 {
 	margin-right: 20px;
 }
+.f-left {
+	float: left;
+}
 .f-right {
 	float: right;
+}
+.l-h-5 {
+	line-height: 50px;
+}
+.text-left {
+	text-align: left;
 }
 
 
@@ -575,14 +608,25 @@ footer.main-footer nav.footer-nav ul li a{
 }
 
 /*site hero 2 */
-.site-hero_2{
-	background: url("../img/site-hero2.jpg") no-repeat;
+.site-hero_2 {
+	background: url("../img/about.jpg") no-repeat;
 	background-size: cover;
 	height: 500px;
 	width: 100%;
 	position: relative;
 }
-.site-hero_2 .page-title{
+.site-hero_3 {
+	background: url("../img/contact.jpg") no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.map-wrapper {
+	height: 300px;
+}
+.site-hero_2 .page-title,
+.site-hero_3 .page-title {
 	position: absolute;
 	top:50%;
 	left: 50%;
@@ -591,8 +635,14 @@ footer.main-footer nav.footer-nav ul li a{
 	        transform:translate(-50%, -50%);
 	text-align: center;
 }
-.site-hero_2 .page-title .big-title{font-size: 36px;}
-.site-hero_2 .page-title .small-title{font-size: 14px;}
+.site-hero_2 .page-title .big-title,
+.site-hero_3 .page-title .big-title {
+	font-size: 36px;
+}
+.site-hero_2 .page-title .small-title,
+.site-hero_3 .page-title .small-title {
+	font-size: 14px;
+}
 
 
 .teenlabs{
@@ -1053,6 +1103,17 @@ footer.main-footer nav.footer-nav ul li a{
 	        transform:translateY(20px);
 	opacity: 0;
 }
+.team_member_job_side {
+	display: inline-block;
+	background-color: #cc853e;
+	padding: 5px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	color:white;
+	margin-top: 0;
+}
 .team_member:hover .team_member_hover{
 	opacity: 1;
 }
@@ -1062,7 +1123,15 @@ footer.main-footer nav.footer-nav ul li a{
 	        transform:translateY(0);
 	opacity: 1;
 }
-
+.team_member_social {
+	font-size: 30px;
+	margin-right: 20px;
+}
+.team_member_social:hover,
+.team_member_social:active,
+.team_member_social:focus {
+	color: #cc853e;
+}
 
 /* ##### 09 : TESTIMONIALS STYLES  ##### */
 .testimonials{
