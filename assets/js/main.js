@@ -44,6 +44,7 @@
         }
       });
 
+		new ModalVideo('.js-modal-video');
 
 		// TABS
 		$(".bottom-line").css({

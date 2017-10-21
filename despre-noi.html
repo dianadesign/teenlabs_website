@@ -53,6 +53,7 @@
 	<link rel="stylesheet" href="assets/css/flexslider.css">
 	<link rel="stylesheet" href="assets/css/animsition.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/modal-video.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -74,15 +75,15 @@
 						<li><a href="#dece" class="animsition-link">De ce să vii?</a></li>
 						<li><a href="#labs-list">Labs</a>
 							<ul class="second-level">
-								<li><a href="elabs-v1.html" class="animsition-link">ELABS v1</a></li>
-								<li><a href="elabs-v2.html" class="animsition-link">ELABS v2</a></li>
+								<li><a href="elabs-v1.html" class="animsition-link">ELABS NIVEL 1</a></li>
+								<li><a href="elabs-v2.html" class="animsition-link">ELABS NIVEL 2</a></li>
 								<li><a href="open-elabs.html" class="animsition-link">OPEN ELABS</a></li>
 							</ul>
 						</li>
 						<li><a href="despre-noi.html" class="animsition-link">Despre noi</a></li>
 						<li><a href="contact.html" class="animsition-link">Contact</a></li>
 						<li>
-							<a href="#" class="btn btn-nav btn-orange uppercase">Mă înscriu</a>
+							<a href="inscriere.html" class="btn btn-nav btn-orange uppercase">Mă înscriu</a>
 						</li>
 					</ul>
 				</nav>
@@ -117,7 +118,7 @@
 							este o abilitate cheie care îi ajută pe tineri să fie mai descurcăreți și
 							încrezători în forțele proprii, indiferent de drumul pe care îl vor alege în viață.
 						</p>
-						<a href="#" class="btn btn-nav btn-orange uppercase">Vezi video</a>
+						<button class="btn btn-orange text-uppercase js-modal-video" data-video-id="ELE3xihlwj8">Vezi video</a>
 					</div>
 				</div>
 				<div class="col-md-6 text-center">
@@ -154,7 +155,7 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp">
 					<div class="team_member">
-						<img src="assets/img/alina.jpg" alt="team image">
+						<img src="assets/img/echipa/alina.jpg" alt="team image">
 						<div class="team_member_hover">
 							<div class="team_member_info">
 								<div class="team_member_name"><h2>Alina Iotu</h2></div>
@@ -202,7 +203,7 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".2s">
 					<div class="team_member">
-						<img src="assets/img/raluca.jpg" alt="team image">
+						<img src="assets/img/echipa/raluca.jpg" alt="team image">
 						<div class="team_member_hover">
 							<div class="team_member_info">
 								<div class="team_member_name"><h2>Raluca Grosu</h2></div>
@@ -216,7 +217,7 @@
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".3s">
 					<div class="team_member">
-						<img src="assets/img/alex.jpeg" alt="team image">
+						<img src="assets/img/echipa/alex.jpeg" alt="team image">
 						<div class="team_member_hover">
 							<div class="team_member_info">
 								<div class="team_member_name"><h2>Alexandru Ficard</h2></div>
@@ -234,28 +235,27 @@
 
 	<!-- light gray section -->
 	<div class="container">
-		<div class="light-gray-section wow fadeInUp" style="padding:15px 30px;">
+		<div class="light-gray-section wow fadeInUp p-x-3 p-y-15">
 			<div class="row">
 				<p class="f-left m-a-0 l-h-5 text-dark-gray">
 					Vrei sa devii ambasador TeenLabs ?
 				</p>
-				<a href="" class="btn btn-orange f-right"><span>înscrie-te!</span></a>
+				<a href="inscriere.html" class="btn btn-orange f-right"><span>înscrie-te!</span></a>
 			</div>
 		</div>
 	</div>
 
 	<!-- newsletter -->
-	<section class="orange-section" style="padding:50px 0">
+	<section class="orange-section wow fadeInUp p-y-5">
 		<div class="container">
-			<div class="col-md-12 col-sm-12 text-center wow fadeInUp">
+			<div class="col-md-12 col-sm-12 text-center">
 				<h2 class="white-text montserrat-text uppercase m-b-2">
 					Te-am convins ?
 				</h2>
-				<a href="#" class="btn white text-uppercase"><span>Mă înscriu</span></a>
+				<a href="inscriere.html" class="btn white text-uppercase"><span>Mă înscriu</span></a>
 			</div>
 		</div>
 	</section>
-
 
 	<!-- FOOTER -->
 	<footer class="main-footer wow fadeInUp">
@@ -272,7 +272,7 @@
 					</nav>
 			</div>
 
-			<div class="col-md-4 col-sm-12" style="text-align:right">
+			<div class="col-md-4 col-sm-12 text-right">
 					<ul class="social-icons f-right">
 						<li><a href="https://www.facebook.com/teenlabsromania/"><i class="icon ion-social-facebook"></i></a></li>
 						<li><a href="https://www.instagram.com/teenlabs.ro/"><i class="icon ion-social-instagram"></i></a></li>
@@ -295,6 +295,7 @@
 	<script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
 	<script type="text/javascript" src="assets/js/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/modal-video.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 	<script type="text/javascript">
 	$(window).load(function(){

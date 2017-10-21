@@ -38,7 +38,7 @@ body{
 
 /* ##### 00 : GENERAL  ##### */
 section{
-	margin-top: 150px;
+	margin-top: 70px;
 }
 .orange-section{
 	background-color:#cc853e;
@@ -157,6 +157,9 @@ ul.social-icons li a:hover{
 	width: 60px;
 	height: 20px;
 }
+.section-title span.two-lines:after {
+	left: 25px;
+}
 .section-title p {
 	line-height: 24px;
 	color:#333333;
@@ -180,6 +183,9 @@ ul.social-icons li a:hover{
 .m-b-2 {
 	margin-bottom: 20px;
 }
+.m-b-5 {
+	margin-bottom: 50px;
+}
 .m-t-3 {
 	margin-top: 30px;
 }
@@ -188,6 +194,23 @@ ul.social-icons li a:hover{
 }
 .m-r-2 {
 	margin-right: 20px;
+}
+.m-y-3 {
+	margin: 30px 0;
+}
+.p-a-0 {
+	padding: 0;
+}
+.p-y-5 {
+	padding: 50px 0;
+}
+.p-y-15 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.p-x-3 {
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .f-left {
 	float: left;
@@ -200,6 +223,9 @@ ul.social-icons li a:hover{
 }
 .text-left {
 	text-align: left;
+}
+.text-right {
+	text-align: right;
 }
 
 
@@ -567,7 +593,7 @@ footer.main-footer nav.footer-nav ul li a{
 .site-hero{
 	height: 850px;
 	width: 100%;
-	background: #fff url("../img/site-hero.jpg") no-repeat;
+	background: #fff url("../img/heros/site-hero.jpg") no-repeat;
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
@@ -609,14 +635,28 @@ footer.main-footer nav.footer-nav ul li a{
 
 /*site hero 2 */
 .site-hero_2 {
-	background: url("../img/about.jpg") no-repeat;
+	background: url("../img/heros/about-hero.jpg") no-repeat;
 	background-size: cover;
 	height: 500px;
 	width: 100%;
 	position: relative;
 }
 .site-hero_3 {
-	background: url("../img/contact.jpg") no-repeat;
+	background: url("../img/heros/contact-hero.jpg") no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.site-hero_elabs1 {
+	background: url("../img/heros/elabs1-hero.png") no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+.elabs1-media {
+	background: url("../img/elabs1-pic.jpg") no-repeat;
 	background-size: cover;
 	height: 500px;
 	width: 100%;
@@ -626,7 +666,8 @@ footer.main-footer nav.footer-nav ul li a{
 	height: 300px;
 }
 .site-hero_2 .page-title,
-.site-hero_3 .page-title {
+.site-hero_3 .page-title,
+.site-hero_elabs1 .page-title {
 	position: absolute;
 	top:50%;
 	left: 50%;
@@ -636,11 +677,13 @@ footer.main-footer nav.footer-nav ul li a{
 	text-align: center;
 }
 .site-hero_2 .page-title .big-title,
-.site-hero_3 .page-title .big-title {
+.site-hero_3 .page-title .big-title,
+.site-hero_elabs1 .page-title .big-title {
 	font-size: 36px;
 }
 .site-hero_2 .page-title .small-title,
-.site-hero_3 .page-title .small-title {
+.site-hero_3 .page-title .small-title,
+.site-hero_elabs1 .page-title .small-title {
 	font-size: 14px;
 }
 
