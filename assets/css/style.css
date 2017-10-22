@@ -116,7 +116,7 @@ ul.social-icons li a:hover{
 }
 /*section's title*/
 .section-title{
-	width: 50%;
+	width: 75%;
 	margin: 0 auto 100px;
 	text-align: center;
 }
@@ -231,7 +231,7 @@ ul.social-icons li a:hover{
 	line-height: 50px;
 }
 .text-left {
-	text-align: left;
+	text-align: left !important;
 }
 .text-right {
 	text-align: right;
@@ -362,9 +362,15 @@ ul.social-icons li a{
 	background-color: #fff;
 	color:#cc853e;
 }
+.btn-ambasador {
+	float: right;
+}
 @media (max-width: 991px) {
 	.btn{
 		margin: 20px 0;
+	}
+	.btn-ambasador {
+		float: left;
 	}
 }
 
@@ -533,7 +539,7 @@ nav.mobile-nav > ul.first-level > li a:hover{
 }
 nav.mobile-nav > ul.first-level > li > ul.second-level{
 	display: none;
-	background-color: #50505f;
+	background-color: #cc853e;
 }
 
 /*menu icon*/
@@ -546,7 +552,7 @@ header.main-header .menu-icon{
 header.main-header .menu-icon .line{
 	height: 1px;
 	width: 30px;
-	background-color: #333333;
+	background-color: #ffffff;
 	-webkit-transition:all .2s ease-in-out;
 			transition:all .2s ease-in-out;
 }
@@ -635,6 +641,11 @@ footer.main-footer nav.footer-nav ul li a{
 	padding: 10px 40px;
 	display: inline-block;
 }
+@media (max-width: 991px) {
+	.site-hero .big-title{
+		font-size: 30px;
+	}
+}
 .site-hero p{
 	width: 50%;
 	margin: 0 auto;
@@ -695,6 +706,9 @@ footer.main-footer nav.footer-nav ul li a{
 .map-wrapper {
 	height: 300px;
 }
+.map-wrapper iframe {
+	width: 100% !important;
+}
 .site-hero_2 .page-title,
 .site-hero_3 .page-title,
 .site-hero_elabs1 .page-title,
@@ -708,6 +722,7 @@ footer.main-footer nav.footer-nav ul li a{
 	    -ms-transform:translate(-50%, -50%);
 	        transform:translate(-50%, -50%);
 	text-align: center;
+  width: 100vw;
 }
 .site-hero_2 .page-title .big-title,
 .site-hero_3 .page-title .big-title,
@@ -716,6 +731,7 @@ footer.main-footer nav.footer-nav ul li a{
 .site-hero_openlabs .page-title .big-title,
 .site-hero_form .page-title .big-title {
 	font-size: 36px;
+	width: 100vw;
 }
 .site-hero_2 .page-title .small-title,
 .site-hero_3 .page-title .small-title,
@@ -724,6 +740,7 @@ footer.main-footer nav.footer-nav ul li a{
 .site-hero_openlabs .page-title .small-title,
 .site-hero_form .page-title .small-title {
 	font-size: 14px;
+  width: 100vw;
 }
 
 

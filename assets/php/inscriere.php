@@ -5,7 +5,7 @@ header('Content-type: text/json');
 $send_email_to = "contact@teenlabs.ro, alina.iotu@gmail.com, diana@ap3.ro";
 $email_subject = "Un nou inscris";
 
-function send_email($email,$name,$phone,$subject,$contactmessage,$ip) {
+function send_email($email,$nume,$prenume,$clasa,$liceu,$tel,$facebook,$pnume,$pprenume,$pemail,$ptel,$motivatie,$ip) {
 
   global $send_email_to;
   global $email_subject;
@@ -15,22 +15,19 @@ function send_email($email,$name,$phone,$subject,$contactmessage,$ip) {
   $headers .= "From: ".$email. "\r\n";
 
   $message = "<strong>Email: </strong>".$email."<br>";
-  $message .= "<strong>Name: </strong>".$nume." ".$prenume."<br>";
-  $message .= "<strong>Phone: </strong>".$tel."<br>";
-  $message .= "<strong>Subject: </strong>".$subject."<br>";
 
   $message .= "<strong>Message: </strong>"."Nume: ".$nume."<br>";
-  $message .= "<strong>Message: </strong>"."Prenume: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Clasa: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Liceu: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Email: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Telefon: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Facebook: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Nume parinte/tutore: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Prenume parinte/tutore: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Email parinte/tutore: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Telefon parinte/tutore: ".$contactmessage."<br>";
-  $message .= "<strong>Message: </strong>"."Motivatie: ".$contactmessage."<br>";
+  $message .= "<strong>Message: </strong>"."Prenume: ".$prenume."<br>";
+  $message .= "<strong>Message: </strong>"."Clasa: ".$clasa."<br>";
+  $message .= "<strong>Message: </strong>"."Liceu: ".$liceu."<br>";
+  $message .= "<strong>Message: </strong>"."Email: ".$email."<br>";
+  $message .= "<strong>Message: </strong>"."Telefon: ".$tel."<br>";
+  $message .= "<strong>Message: </strong>"."Facebook: ".$facebook."<br>";
+  $message .= "<strong>Message: </strong>"."Nume parinte/tutore: ".$pnume."<br>";
+  $message .= "<strong>Message: </strong>"."Prenume parinte/tutore: ".$pprenume."<br>";
+  $message .= "<strong>Message: </strong>"."Email parinte/tutore: ".$pemail."<br>";
+  $message .= "<strong>Message: </strong>"."Telefon parinte/tutore: ".$ptel."<br>";
+  $message .= "<strong>Message: </strong>"."Motivatie: ".$motivatie."<br>";
 
   $message .= "<strong>Client ip = </strong>".$ip."<br>";
 
@@ -63,14 +60,21 @@ function get_client_ip() {
 if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 
   $emailc = $_POST['email'];
-  $namec = $_POST['nume'];
-  $phonec = $_POST['tel'];
-  $subjectc = $_POST['subject'];
-  $contactmessagec = $_POST['message'];
+  $numec = $_POST['nume'];
+  $prenumec = $_POST['prenume'];
+  $clasac = $_POST['clasa'];
+  $liceuc = $_POST['liceu'];
+  $telc = $_POST['tel'];
+  $facebookc = $_POST['facebook'];
+  $pnumec = $_POST['pnume'];
+  $pprenumec = $_POST['pprenume'];
+  $pemailc = $_POST['pemail'];
+  $ptelc = $_POST['ptel'];
+  $motivatiec = $_POST['motivatie'];
 
   $clientIp = get_client_ip();
 
-  send_email($emailc,$namec,$phonec,$subjectc,$contactmessagec,$clientIp);
+  send_email($emailc,$numec,$prenumec,$clasac,$liceuc,$telc,$facebookc,$pnumec,$pprenumec,$pemailc,$ptelc,$motivatiec,$clientIp);
 
   echo 'true';
 
