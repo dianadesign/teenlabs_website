@@ -2,9 +2,9 @@
 header('Content-type: text/json');
 
 // EDIT THE 2 LINES BELOW AS REQUIRED
-//contact@teenlabs.ro, alina.iotu@gmail.com, 
-$send_email_to = "diana@ap3.ro";
-$email_subject = "Un nou inscris";
+
+$send_email_to = "contact@teenlabs.ro, alina.iotu@gmail.com";
+$email_subject = "Yuhuu, un nou inscris";
 
 function send_email($email,$nume,$prenume,$clasa,$liceu,$tel,$facebook,$pnume,$pprenume,$pemail,$ptel,$motivatie,$ip) {
 
@@ -17,18 +17,18 @@ function send_email($email,$nume,$prenume,$clasa,$liceu,$tel,$facebook,$pnume,$p
 
   $message = "<strong>Email: </strong>".$email."<br>";
 
-  $message .= "<strong>Message: </strong>"."Nume: ".$nume."<br>";
-  $message .= "<strong>Message: </strong>"."Prenume: ".$prenume."<br>";
-  $message .= "<strong>Message: </strong>"."Clasa: ".$clasa."<br>";
-  $message .= "<strong>Message: </strong>"."Liceu: ".$liceu."<br>";
-  $message .= "<strong>Message: </strong>"."Email: ".$email."<br>";
-  $message .= "<strong>Message: </strong>"."Telefon: ".$tel."<br>";
-  $message .= "<strong>Message: </strong>"."Facebook: ".$facebook."<br>";
-  $message .= "<strong>Message: </strong>"."Nume parinte/tutore: ".$pnume."<br>";
-  $message .= "<strong>Message: </strong>"."Prenume parinte/tutore: ".$pprenume."<br>";
-  $message .= "<strong>Message: </strong>"."Email parinte/tutore: ".$pemail."<br>";
-  $message .= "<strong>Message: </strong>"."Telefon parinte/tutore: ".$ptel."<br>";
-  $message .= "<strong>Message: </strong>"."Motivatie: ".$motivatie."<br>";
+  $message .= "<strong>Nume: </strong>".$nume."<br>";
+  $message .= "<strong>Prenume: </strong>".$prenume."<br>";
+  $message .= "<strong>Clasa: </strong>".$clasa."<br>";
+  $message .= "<strong>Liceu: </strong>".$liceu."<br>";
+  $message .= "<strong>Email: </strong>".$email."<br>";
+  $message .= "<strong>Telefon: </strong>".$tel."<br>";
+  $message .= "<strong>Facebook: </strong>".$facebook."<br>";
+  $message .= "<strong>Nume parinte/tutore: </strong>".$pnume."<br>";
+  $message .= "<strong>Prenume parinte/tutore: </strong>".$pprenume."<br>";
+  $message .= "<strong>Email parinte/tutore: </strong>".$pemail."<br>";
+  $message .= "<strong>Telefon parinte/tutore: </strong>".$ptel."<br>";
+  $message .= "<strong>Motivatie: </strong>".$motivatie."<br>";
 
   $message .= "<strong>Client ip = </strong>".$ip."<br>";
 

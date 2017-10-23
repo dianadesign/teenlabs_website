@@ -71,7 +71,7 @@
 				<nav class="desktop-nav">
 					<ul class="first-level">
 						<li><a href="index.html" class="animsition-link">Acasă</a></li>
-						<li><a href="index.html#dece" class="animsition-link">De ce să vii?</a></li>
+						<li><a href="index.html#dece">De ce să vii?</a></li>
 						<li><a href="index.html#labs-list">Labs</a>
 							<ul class="second-level">
 								<li><a href="elabs-v1.html" class="animsition-link">ELABS NIVEL 1</a></li>
@@ -110,18 +110,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-sm-12 col-md-offset-2">
-          <form id="contact" class="text-white m-b-5" novalidate>
+          <form class="text-white m-b-5 inscriere" novalidate>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="nume">Nume</label>
-                  <input type="text" class="form-control" id="nume" tabindex="1" name="nume" required autofocus>
+                  <input type="text" class="form-control form-element" id="nume" tabindex="1" name="nume" required autofocus>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="prenume">Prenume</label>
-                  <input type="text" class="form-control" id="prenume" tabindex="2" name="prenume" required>
+                  <input type="text" class="form-control form-element" id="prenume" tabindex="2" name="prenume" required>
                 </div>
               </div>
             </div>
@@ -129,13 +129,13 @@
               <div class="col-md-2">
                 <div class="form-group">
                   <label for="clasa">Clasa</label>
-                  <input type="text" class="form-control" id="clasa" tabindex="3" name="clasa" required>
+                  <input type="text" class="form-control form-element" id="clasa" tabindex="3" name="clasa" required>
                 </div>
               </div>
               <div class="col-md-10">
                 <div class="form-group">
                   <label for="liceu">Liceul</label>
-                  <input type="text" class="form-control" id="liceu" tabindex="4" name="liceu" required>
+                  <input type="text" class="form-control form-element" id="liceu" tabindex="4" name="liceu" required>
                 </div>
               </div>
             </div>
@@ -143,13 +143,13 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" tabindex="5" name="email" required>
+                  <input type="email" class="form-control form-element" id="email" tabindex="5" name="email" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="tel">Telefon</label>
-                  <input type="text" class="form-control" id="tel" tabindex="6" name="tel" required>
+                  <input type="text" class="form-control form-element" id="tel" tabindex="6" name="tel" required>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="facebook">Link Facebook</label>
-                  <input type="text" class="form-control" id="facebook" tabindex="7" name="facebook" required>
+                  <input type="text" class="form-control form-element" id="facebook" tabindex="7" name="facebook" required>
                 </div>
               </div>
             </div>
@@ -165,13 +165,13 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="pnume">Nume parinte/tutore</label>
-                  <input type="text" class="form-control" id="pnume" tabindex="8" name="pnume" required>
+                  <input type="text" class="form-control form-element" id="pnume" tabindex="8" name="pnume" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="pprenume">Prenume parinte/tutore</label>
-                  <input type="text" class="form-control" id="pprenume" tabindex="9" name="pprenume" required>
+                  <input type="text" class="form-control form-element" id="pprenume" tabindex="9" name="pprenume" required>
                 </div>
               </div>
             </div>
@@ -179,13 +179,13 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="pemail">Email parinte/tutore</label>
-                  <input type="email" class="form-control" id="pemail" tabindex="10" name="pemail" required>
+                  <input type="email" class="form-control form-element" id="pemail" tabindex="10" name="pemail" required>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="ptel">Telefon parinte/tutore</label>
-                  <input type="text" class="form-control" id="ptel" tabindex="11" name="ptel" required>
+                  <input type="text" class="form-control form-element" id="ptel" tabindex="11" name="ptel" required>
                 </div>
               </div>
             </div>
@@ -194,15 +194,16 @@
                 <div class="form-group">
                   <label for="motivatie">Motivatie</label>
                   <textarea placeholder="Spune-ne despre motivatia ta de a face parte din comunitatea Teen Labs"
-                  type="text" tabindex="12" name="motivatie" class="form-control" id="motivatie" required></textarea>
+                  type="text" tabindex="12" name="motivatie" class="form-control form-element" id="motivatie" required></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <button class="btn btn-orange w-100 m-t-3" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </div>
+                  <button class="btn btn-orange w-100 m-t-3 form-submit" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+									<div class="cform-response show mt20"></div>
+								</div>
               </div>
             </div>
 
@@ -221,7 +222,7 @@
 						<nav class="footer-nav">
 							<ul>
 								<li><a href="index.html" class="animsition-link">Acasa</a></li>
-								<li><a href="index.html#dece" class="animsition-link">De ce sa vii?</a></li>
+								<li><a href="index.html#dece">De ce sa vii?</a></li>
 								<li><a href="index.html#labs-list">Labs</a></li>
 								<li><a href="despre-noi.html" class="animsition-link">Despre noi</a></li>
 								<li><a href="contact.html" class="animsition-link">Contact</a></li>
@@ -261,6 +262,7 @@
 	<script type="text/javascript" src="assets/js/wow.min.js"></script>
 	<script type="text/javascript" src="assets/js/modal-video.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/form.js"></script>
 	<script type="text/javascript">
 	$(window).load(function(){
 		new WOW().init();
