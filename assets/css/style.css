@@ -236,18 +236,13 @@ ul.social-icons li a:hover{
 .text-right {
 	text-align: right;
 }
-
-
+.d-inline {
+	display: inline !important;
+}
 
 @media (max-width: 991px) {
 	.section-title{
 		margin : 0 auto 50px;
-	}
-	.section-title span:after{
-		left:50%;
-		-webkit-transform:translateX(-50%);
-		    -ms-transform:translateX(-50%);
-		        transform:translateX(-50%);
 	}
 }
 
@@ -517,6 +512,7 @@ nav.mobile-nav{
 	right: 0;
 	top:100px;
 	display: none;
+	width: 100%;
 }
 nav.mobile-nav > ul.first-level li{
 	list-style: none;

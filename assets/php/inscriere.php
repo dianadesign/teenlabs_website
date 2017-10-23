@@ -2,7 +2,8 @@
 header('Content-type: text/json');
 
 // EDIT THE 2 LINES BELOW AS REQUIRED
-$send_email_to = "contact@teenlabs.ro, alina.iotu@gmail.com, diana@ap3.ro";
+//contact@teenlabs.ro, alina.iotu@gmail.com, 
+$send_email_to = "diana@ap3.ro";
 $email_subject = "Un nou inscris";
 
 function send_email($email,$nume,$prenume,$clasa,$liceu,$tel,$facebook,$pnume,$pprenume,$pemail,$ptel,$motivatie,$ip) {
